@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4CAF50, #adfe99); /* Example gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 20px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#weatherOutput {
+    display: none;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    padding: 10px 30px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+#getWeatherBtn {
+    background-color: #4CAF50;
+    cursor: pointer;
+}
+
+#suggestions {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-height: 150px;
+    overflow-y: auto;
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    margin-top: 5px;
+}
+
+.suggestion {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.suggestion:hover {
+    background-color: #f0f0f0;
+}
